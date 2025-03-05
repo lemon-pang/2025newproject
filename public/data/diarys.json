@@ -1,0 +1,17 @@
+{
+    "version": "1.0",
+    "diarys": [
+        {
+            "id": 1,
+            "diarydate": "2025-01-02",
+            "user": {
+                "name" : "뽀블리",
+                "photo" : "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDExMjJfNjcg%2FMDAxNzMyMjczNjQ0MjQ0.fY4RE4c1PZVqf0DJ1CGpwfiZOdjZRkb6GfELEOtloSQg.sBhzWm9EruV-6_wmld7g6jm8Pb7be7uqCzt2r91ccZwg.PNG%2F%25BD%25BA%25C5%25A9%25B8%25B0%25BC%25A6_2024-11-22_%25BF%25C0%25C8%25C4_5.57.25.png&type=sc960_832:"
+            },
+            "title": "토요일에는 역시",
+            "diary-memo": "주말에는 역시 서면에 갔다가 맛있는거 먹는게 최고지 , 오늘 먹은 꼬기는 너무 맛있었어. 사진 간직해야지",
+            "diary-photo": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEyMzFfNTgg%2FMDAxNzM1NjMyNTYzMzY1._es3Wtm_zChJaapBXss7Sjkumko5CNtH0tjwvpRx6tcg.KKaJIWVBW_Ke34OLf52Q14nBlNtNT66Bw0A7z3qY1Q4g.JPEG%2FIMG_7092.jpg&type=sc960_832",
+            "coment": "맞아 이집 삼겹살 진짜 맛있었어 담에 또가장"
+        }
+    ]
+}
