@@ -1,0 +1,35 @@
+.diarys{
+    background-color: rgb(255, 237, 239);
+    height: 80vh;
+    z-index: 100;
+}
+
+.diarys-inner{
+    border: 1px solid grey;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.diarys-inner .girl-diary{
+    border: 1px solid #333;
+    border-radius: 3px;
+    height: 50%;
+    display: flex;  /* 플렉스 컨테이너로 설정 */
+    justify-content: center;  /* 가로 중앙 정렬 */
+    align-items: center;  /* 세로 중앙 정렬 */
+    text-align: center; 
+    
+}
+.diarys-inner .boy-diary{
+    border: 1px solid #333;
+    border-radius: 3px;
+    height: 50%;
+    margin-top: 20px;
+    display: flex;  /* 플렉스 컨테이너로 설정 */
+    justify-content: center;  /* 가로 중앙 정렬 */
+    align-items: center;  /* 세로 중앙 정렬 */
+    text-align: center; 
+}
