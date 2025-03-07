@@ -1,7 +1,15 @@
 import { useState, useEffect } from "react";
 import DatePicker from "react-datepicker"; // 📌 캘린더 라이브러리 추가
 import "react-datepicker/dist/react-datepicker.css"; // 📌 기본 스타일 추가
+import searchIcon from "/img/search.png";
 import './DateHeader.css';
+
+const CustomInput = ({ value, onClick }) => (
+  <div className="custom-date-input" onClick={onClick}>
+    <input type="text" value={value} readOnly />
+    <img src={searchIcon} alt="검색 아이콘" className="search-icon" />
+  </div>
+);
 
 const DateHeader = ({ selectedDate, onDateChange }) => {
   const [today, setToday] = useState("");
@@ -20,20 +28,22 @@ const DateHeader = ({ selectedDate, onDateChange }) => {
   };
 
   return (
-    <div>
-      {/* <h1>{selectedDate || today}</h1> 선택된 날짜 표시 */}
-      <h2 style={{ cursor: "pointer" }}></h2>
+    <div className="header-container">
+      <div className="header-container-inner">
+        {/* <h1>{selectedDate || today}</h1> */}
+        <h2 style={{ cursor: "pointer" }}></h2>
 
-      {/* 📌 캘린더 UI 추가 */}
-      <DatePicker
-        selected={date}
-        onChange={handleDateChange} // 날짜 변경 시 실행
-        dateFormat="yyyy-MM-dd" // 날짜 형식 설정
-        maxDate={new Date()} // 미래 날짜 선택 방지
-        showYearDropdown // 연도 선택 드롭다운 추가
-        showMonthDropdown // 월 선택 드롭다운 추가
-        dropdownMode="select" className="date-input" // 드롭다운 모드 설정
-      />
+        {/* 📌 캘린더 UI 추가 */}
+        <DatePicker
+          selected={date}
+          onChange={handleDateChange} // 날짜 변경 시 실행
+          dateFormat="yyyy-MM-dd" // 날짜 형식 설정
+          maxDate={new Date()} // 미래 날짜 선택 방지
+          showYearDropdown // 연도 선택 드롭다운 추가
+          showMonthDropdown // 월 선택 드롭다운 추가
+          dropdownMode="select" customInput={<CustomInput />} className="date-input"  // 드롭다운 모드 설정
+        />  
+      </div>
     </div>
   );
 };
