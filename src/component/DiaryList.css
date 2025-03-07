@@ -1,0 +1,29 @@
+.gnbdiary{
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgb(255, 244, 248);
+}
+
+.diary-text {
+    max-width: 310px; /* ✅ 원하는 너비 조절 (원하는 값으로 변경 가능) */
+    word-wrap: break-word; /* ✅ 긴 단어도 줄바꿈 */
+    overflow-wrap: break-word; /* ✅ 줄바꿈 강제 */
+    white-space: pre-line; /* ✅ 줄바꿈 유지 + 자동 개행 */
+    text-align: center; /* ✅ 정렬 (선택 사항) */
+    line-height: 2; /* ✅ 줄 간격 조절 */
+    margin: 15px auto;
+    
+}
+.diary-imgphoto{
+    max-width: 400px;
+    text-align: center;
+    margin: 20px auto;
+    
+}
+
+.diary-imgphoto img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
