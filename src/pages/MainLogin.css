@@ -1,0 +1,30 @@
+.main-inner{
+    background-color: #fad2e3;
+    height: 100vh;
+    width: 100%;
+}
+
+.mainlogo {
+    
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+}
+
+.mainlogo img {
+    margin-top: 100px;
+    width: 400px; /* 이미지 크기 조정 */
+    height: auto; /* 비율 유지 */
+}
+.button-css{
+    margin-top: 30px;
+}
+.btn-css{
+    border: none;
+    padding: 5px 20px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+.btn-css:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}

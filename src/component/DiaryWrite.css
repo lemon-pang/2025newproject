@@ -1,0 +1,114 @@
+.diarywrite .write-inner {
+    background-color: #eeeeee;
+    width: 100%; /* 화면 너비에 맞게 설정 */
+    height: 100vh; /* 화면 높이에 맞게 설정 */
+    padding: 20px; /* 모바일 화면에 여백을 추가 */
+    box-sizing: border-box; /* 패딩을 포함한 크기 계산 */
+}
+
+.plus-write-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.write-btn {
+    margin-top: 50px;
+    font-size: 100px;
+    color: #70798f;
+    padding: 20px 20px;
+    width: 140px;
+    height: 140px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease; /* 부드러운 크기 변화 */
+    /* 기본 버튼 크기 */
+    width: 15vw;  /* 뷰포트의 15% */
+    height: 15vw; /* 뷰포트의 15% */
+}
+
+.write-btn.has-image {
+    width: 25vw; /* 이미지가 있을 때 버튼 크기 */
+    height: 25vw; /* 이미지가 있을 때 버튼 크기 */
+}
+
+.write-btn i {
+    vertical-align: top;
+}
+
+.photoptag {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.image-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지를 버튼 크기에 맞게 채운다 */
+    border-radius: 20px;
+    cursor: pointer; /* 이미지 클릭이 가능함을 알리기 위해 */
+}
+
+.textareatag textarea {
+    height: 300px;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: none;
+}
+
+/* "글 등록하기" 버튼 스타일 */
+.submit-btn {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #fad2e3;
+    color: #595959;
+    border: none;
+    border-radius: 5px;
+    width: 100%; 
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+/* 미디어 쿼리: 모바일에서 버튼 크기 조정 */
+@media (max-width: 768px) {
+    .write-btn {
+        width: 40vw; /* 모바일 화면에서 버튼 크기 */
+        height: 40vw; /* 모바일 화면에서 버튼 크기 */
+    }
+
+    .write-btn.has-image {
+        width: 60vw; /* 이미지가 있을 때 버튼 크기 */
+        height: 60vw; /* 이미지가 있을 때 버튼 크기 */
+    }
+}
+
+/* 미디어 쿼리: PC에서 버튼 크기 조정 */
+@media (min-width: 1240px) {
+    .write-btn {
+        width: 15vw; /* PC 화면에서 버튼 크기 */
+        height: 15vw; /* PC 화면에서 버튼 크기 */
+    }
+
+    .write-btn.has-image {
+        width: 20vw; /* 이미지가 있을 때 버튼 크기 */
+        height: 20vw; /* 이미지가 있을 때 버튼 크기 */
+    }
+}
+
