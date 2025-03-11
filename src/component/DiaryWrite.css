@@ -5,7 +5,10 @@
     padding: 20px; /* 모바일 화면에 여백을 추가 */
     box-sizing: border-box; /* 패딩을 포함한 크기 계산 */
 }
-
+.xicon{
+    text-align: right;
+    font-size: bold;
+}
 .plus-write-btn {
     display: flex;
     justify-content: center;
